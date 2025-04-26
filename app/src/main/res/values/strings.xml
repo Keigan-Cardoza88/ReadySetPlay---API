@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">ReadySetPlay Performance Companion</string>
-    <string name="search_hint">Enter song name</string>
-    <string name="search_button">Search</string>
-    <string name="no_results">No songs found</string>
-    <string name="error_message">Failed to fetch data</string>
-</resources>
