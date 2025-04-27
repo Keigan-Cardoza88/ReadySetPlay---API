@@ -1,0 +1,13 @@
+[33m5bf2c1b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mAndroid-Studio[m[33m, [m[1;31morigin/Vs-Code[m[33m, [m[1;31morigin/Android-Studio[m[33m)[m Merge pull request #1 from Keigan-Cardoza88/VS-Code
+[33mbd18f9a[m Delete gradlew.bat
+[33md246a7c[m Delete gradlew
+[33m7c9fcf7[m Delete gradle.properties
+[33mdfa8f2d[m Delete build.gradle.kts
+[33m0fbc389[m Delete ReadySetPlay.png
+[33m76afe93[m Delete .gitignore
+[33mcbc0649[m Delete gradle directory
+[33mdff2ec2[m Delete app directory
+[33m579ce55[m Delete .idea directory
+[33mce6879a[m Delete settings.gradle.kts
+[33mf154be4[m Delete .idea/.gitignore
+[33mf58cfa2[m[33m ([m[1;31morigin/secondary[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m Initial commit: Push Android Studio project to GitHub
