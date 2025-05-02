@@ -1,0 +1,27 @@
+Credits
+
+ReadySetPlay Project
+This project was developed as part of the Computer Science Department at Don Bosco Institute of Technology (DBIT). The development and implementation of this application were carried out by the following individuals:
+
+Keigan Cardoza
+Anton Jarvis
+Christopher Chettiar
+
+Acknowledgements
+We would like to express our sincere gratitude to the Computer Science Department at DBIT for providing the necessary resources and academic environment to bring this project to life. Their guidance and encouragement were instrumental in the success of this endeavor.
+
+Special Thanks
+Our heartfelt thanks to our families and friends for their unwavering support, encouragement, and understanding throughout the course of this project.
+
+Copyright Notice
+This project, ReadySetPlay, is the intellectual property of the original authors, Keigan Cardoza, Anton Jarvis, and Christopher Chettiar. All rights are protected under copyright law, and the project may not be copied, modified, or redistributed without express permission from the authors.
+
+Technologies Used
+We would like to acknowledge the following technologies and libraries that contributed to the development of this project:
+
+FastAPI
+TarsosDSP
+Kotlin
+MySQL
+Android Studio
+VSCode

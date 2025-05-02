@@ -1,0 +1,310 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="8dp">
+
+    <!-- Sleek Search Bar -->
+
+
+    <!-- TextView (status/message) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="#000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Song Name"
+            android:orientation="horizontal"
+            android:textColorHint="#FFFFFF"
+            app:boxBackgroundColor="#2C2C2C"
+            app:boxBackgroundMode="filled"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:hintAnimationEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/searchInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/searchButton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="-4dp"
+            android:backgroundTint="#1DB954"
+            android:text="Go"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Status Message"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/songDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Main Text Editor -->
+    <ScrollView
+        android:id="@+id/textEditorScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1E1E1E"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textEditor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lyrics and Chords appear here..."
+            android:textColorHint="#a4a4a4"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent"
+            android:textSize="14sp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:minHeight="500dp" />
+    </ScrollView>
+
+    <!-- File Operations Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="4dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/undoButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:text="👈"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/newFileButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="2dp"
+            android:text="New"
+            android:textSize="12sp"
+            app:cornerRadius="2dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/openFileButton"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:text="Open"
+            android:textSize="12sp"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveFileButton"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:text="Save"
+            android:textSize="12sp"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sendButton"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:text="Send"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+    </LinearLayout>
+
+    <!-- Formatting Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="4dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boldButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:text="B"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/italicButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:text="I"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/underlineButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="U"
+            android:textSize="14sp"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/transposeDownButton"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:text="T-"
+            android:textSize="14sp"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+
+        <TextView
+            android:id="@+id/transposeLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingHorizontal="8dp"
+            android:text="±0"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/transposeUpButton"
+            android:layout_width="46dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:text="T+"
+            android:textSize="14sp"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+    </LinearLayout>
+
+    <!-- Scroll Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="4dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pageBreakButton"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:text="Page Break"
+            android:textSize="10sp"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/autoScrollButton"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:text="AutoScroll"
+            android:textSize="10sp"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/aiAutoScrollButton"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:text="AI AutoScroll"
+            android:textSize="10sp"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+    </LinearLayout>
+
+    <!-- Speed Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/decreaseSpeedButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="⬇"
+            android:textSize="14sp"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/increaseSpeedButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:text="⬆"
+            android:textSize="14sp"
+            app:cornerRadius="2dp"
+            android:paddingHorizontal="2dp"/>
+    </LinearLayout>
+
+</LinearLayout>

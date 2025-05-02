@@ -1,0 +1,39 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.readysetplay_performancecompanion.app-mergeDebugResources-60:/values-v26/values-v26.xml",
+            "map": [
+                {
+                    "source": "D:\\Program Files\\App Development\\ReadySetPlayPerformanceCompanion\\app\\src\\main\\res\\values-v26\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "12",
+                        "endColumns": "12",
+                        "endOffsets": "560"
+                    },
+                    "to": {
+                        "startLines": "17",
+                        "startColumns": "4",
+                        "startOffsets": "889",
+                        "endLines": "26",
+                        "endColumns": "12",
+                        "endOffsets": "1381"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\8.11.1\\transforms\\1923cc7c620337874777b2808dc27c36\\transformed\\appcompat-1.7.0\\res\\values-v26\\values-v26.xml",
+                    "from": {
+                        "startLines": "2,3,4,8,12,16",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,130,217,381,557,796",
+                        "endLines": "2,3,7,11,15,16",
+                        "endColumns": "74,86,12,12,12,92",
+                        "endOffsets": "125,212,376,552,791,884"
+                    }
+                }
+            ]
+        }
+    ]
+}

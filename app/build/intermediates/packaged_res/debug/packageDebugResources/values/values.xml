@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="blue">#008afd</color>
+    <color name="blue_400">#0d548e</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">ReadySetPlay Performance Companion</string>
+    <string name="error_message">Failed to fetch data</string>
+    <string name="no_results">No songs found</string>
+    <string name="search_button">Search</string>
+    <string name="search_hint">Enter song name</string>
+    <style name="CompactButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingVertical">0dp</item>
+        <item name="android:paddingHorizontal">4dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+    <style name="FloatingHintAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">8sp</item>
+        <item name="android:translationY">-10dp</item>
+        <item name="android:textColor">#A0A0A0</item> 
+    </style>
+    <style name="IconButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">0dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+    <style name="Theme.ReadySetPlayPerformanceCompanion" parent="Theme.MaterialComponents.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/teal_200</item>
+        <item name="colorPrimaryDark">@color/blue_400</item>
+        <item name="colorAccent">@color/teal_200</item>
+
+        
+        <item name="android:statusBarColor">@color/purple_700</item>
+        <item name="android:navigationBarColor">@color/black</item>
+
+        
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+</resources>

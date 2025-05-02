@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.readysetplay_performancecompanion.app-mergeDebugResources-60:/values-night-v26/values-night-v26.xml",
+            "map": [
+                {
+                    "source": "D:\\Program Files\\App Development\\ReadySetPlayPerformanceCompanion\\app\\src\\main\\res\\values-night-v26\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "12",
+                        "endColumns": "12",
+                        "endOffsets": "560"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "11",
+                        "endColumns": "12",
+                        "endOffsets": "547"
+                    }
+                }
+            ]
+        }
+    ]
+}
